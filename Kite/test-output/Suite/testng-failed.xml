@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="extendReport.ExtentTestNGIReporterListener"/>
+  </listeners>
+  <test thread-count="5" name="ChromeT(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.test.classes.VerifyLoginpage">
+        <methods>
+          <include name="checksignin"/>
+          <include name="launch"/>
+          <include name="close"/>
+          <include name="openApp"/>
+          <include name="openWorkbook"/>
+        </methods>
+      </class> <!-- com.test.classes.VerifyLoginpage -->
+    </classes>
+  </test> <!-- ChromeT(failed) -->
+</suite> <!-- Failed suite [Suite] -->
